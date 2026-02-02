@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>חיים שלי בלב</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="page" aria-live="polite">
+    <section class="card" aria-labelledby="title">
+      <header class="card-header">
+        <h1 id="title" class="title" tabindex="0">כפר</h1>
+        <p class="question">רוצה להיות אישתי נסיכה?</p>
+      </header>
+
+      <div class="buttons-area" id="buttonsArea">
+        <button id="yesButton" class="btn btn-yes">כןכןכן חיים שלי בלב</button>
+
+        <div id="noWrap" class="no-wrap" style="transform: translate(33.1961px, -95.4817px);">
+          <button
+            id="noButton"
+            class="btn btn-no"
+            aria-describedby="noHint"
+          >
+            😔😔לא 
+          </button>
+
+          <span id="noHint" class="sr-only">
+            כפתור שמנסה לברוח
+          </span>
+          <span id="noMessage" class="no-message" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <p class="caption">נונונו באבי קטן</p>
+    </section>
+
+    <section
+      id="celebration"
+      class="celebration"
+      aria-hidden="true"
+    >
+      <div class="celebration-card" role="status" aria-live="polite">
+        🎉🎉🎉
+      </div>
+    </section>
+
+    <div
+      id="easterEgg"
+      class="modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card" role="document">
+        🥚
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
